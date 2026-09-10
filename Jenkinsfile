@@ -20,11 +20,10 @@ pipeline {
                 '''
             }
         }
+
         stage('Test') {
             steps {
-                sh '''
-                Test stage
-                '''
+                echo 'Test stage'
             }
         }
     }
